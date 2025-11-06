@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Anecdotal Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Demerit Tracker 📝</h1>
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" value="Alex Johnson" readonly>
+
+        <label for="demeritPoints">Current Demerit Points:</label>
+        <input type="number" id="demeritPoints" value="0" min="0" readonly>
+        
+        <button onclick="addDemerit(5)">Add 5 Points (Minor Infraction)</button>
+        <button onclick="addDemerit(10)">Add 10 Points (Major Infraction)</button>
+
+        <hr>
+
+        <h2>Current Consequence Assigned:</h2>
+        <p id="currentConsequence">No consequence assigned yet.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
